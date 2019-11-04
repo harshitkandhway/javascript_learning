@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+        <script>
+        class Car{
+            constructor(brand){
+            this.carname = brand;
+            }
+1
+            myFunction(){
+                return this.carname+" from method";
+            };
+        
+        }
+
+        mycar = new Car("Ford");
+        document.getElementById("demo").innerHTML = mycar.carname;
+        document.getElementById("demo1").innerHTML = mycar.myFunction();
+        </script>
+    </body>
+</html>
